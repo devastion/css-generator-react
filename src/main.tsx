@@ -5,7 +5,7 @@ import "./index.css";
 import { Core } from "components/Core";
 import { Navigation } from "components/Navigation";
 import { ErrorPage } from "components/ErrorPage";
-import { BorderRadius, BoxShadow, TextShadow, RGBA, FontFace } from "./pages/";
+import { BorderRadius, BoxShadow, TextShadow, RGBA, FontFace, MultipleColumns, BoxResize, BoxSizing, Outline, Transition, Transform } from "./pages/";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +59,60 @@ const router = createBrowserRouter([
       <Core>
         <Navigation />
         <FontFace />
+      </Core>
+    ),
+  },
+  {
+    path: "/multiple-columns",
+    element: (
+      <Core>
+        <Navigation />
+        <MultipleColumns />
+      </Core>
+    ),
+  },
+  {
+    path: "/box-resize",
+    element: (
+      <Core>
+        <Navigation />
+        <BoxResize />
+      </Core>
+    ),
+  },
+  {
+    path: "/box-sizing",
+    element: (
+      <Core>
+        <Navigation />
+        <BoxSizing />
+      </Core>
+    ),
+  },
+  {
+    path: "/outline",
+    element: (
+      <Core>
+        <Navigation />
+        <Outline />
+      </Core>
+    ),
+  },
+  {
+    path: "/transition",
+    element: (
+      <Core>
+        <Navigation />
+        <Transition />
+      </Core>
+    ),
+  },
+  {
+    path: "/transform",
+    element: (
+      <Core>
+        <Navigation />
+        <Transform />
       </Core>
     ),
   },
