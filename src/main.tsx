@@ -5,7 +5,7 @@ import "./index.css";
 import { Core } from "components/Core";
 import { Navigation } from "components/Navigation";
 import { ErrorPage } from "components/ErrorPage";
-import { BorderRadius } from "./pages/BorderRadius/BorderRadius";
+import { BorderRadius, BoxShadow, TextShadow, RGBA, FontFace } from "./pages/";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +23,42 @@ const router = createBrowserRouter([
       <Core>
         <Navigation />
         <BorderRadius />
+      </Core>
+    ),
+  },
+  {
+    path: "/box-shadow",
+    element: (
+      <Core>
+        <Navigation />
+        <BoxShadow />
+      </Core>
+    ),
+  },
+  {
+    path: "/text-shadow",
+    element: (
+      <Core>
+        <Navigation />
+        <TextShadow />
+      </Core>
+    ),
+  },
+  {
+    path: "/rgba",
+    element: (
+      <Core>
+        <Navigation />
+        <RGBA />
+      </Core>
+    ),
+  },
+  {
+    path: "/font-face",
+    element: (
+      <Core>
+        <Navigation />
+        <FontFace />
       </Core>
     ),
   },

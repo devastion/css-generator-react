@@ -1,7 +1,7 @@
 import React from "react";
 
 interface PreviewProps {
-  styles: React.CSSProperties;
+  styles?: React.CSSProperties;
 }
 
 export const Preview = ({ styles }: PreviewProps) => {
